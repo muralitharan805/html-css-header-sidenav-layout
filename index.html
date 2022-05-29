@@ -1,19 +1,60 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="script.js"></script>
+    <script async src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div class="header">
       <div class="header-content">
-        <div class="company-name">test</div>
+        <div class="company-name">
+          <span>Company logo</span>
+          <i class="fa-solid fa-bars" onclick="hidesidenav()"></i>
+          <!-- <button>click</button> -->
+        </div>
         <div class="company-menus">test</div>
       </div>
     </div>
-    <div class="sidenav" id="test">sidenav</div>
+    <div class="sidenav" id="sidenav-hide">
+      <div class="sidenav-items1">
+        <div class="sidenav-menus">
+          <div class="menuicon"><i class="fa-solid fa-house"></i></div>
+          <div class="menuname" id="hideMenuName">Home</div>
+        </div>
+        <div class="sidenav-menus">
+          <div class="menuicon"><i class="fa-solid fa-house"></i></div>
+          <div class="menuname" id="hideMenuName">Home</div>
+        </div>
+        <div class="sidenav-menus">
+          <div class="menuicon"><i class="fa-solid fa-house"></i></div>
+          <div class="menuname" id="hideMenuName">Home</div>
+        </div>
+        <div class="sidenav-menus">
+          <div class="menuicon"><i class="fa-solid fa-house"></i></div>
+          <div class="menuname" id="hideMenuName">Home</div>
+        </div>
+      </div>
+      <div class="sidenav-items2">
+        <!-- <button>Collabse</button>
+         -->
+
+        <div class="sidenav-menus">
+          <div class="menuicon">
+            <i class="fa-solid fa-angles-right" onclick="hideMenuName()"></i>
+          </div>
+          <div class="menuname" id="hideMenuName">Collabse</div>
+        </div>
+      </div>
+    </div>
     <div class="content">
-      <div class="content-container">
+      <div class="content-container" id="content-container">
         <div class="company-info">demo</div>
       </div>
     </div>
